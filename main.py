@@ -1,37 +1,31 @@
-main.py
+min.py
 
 class person:
     #Attributes
     name="fatma"
     age=15
+    
+    class Person2:
+      def __init__(self, Name, Age):
+       self.Name = Name
+      self.Age = Age
+
     def is_adult(self):
-       if self.age>=18 :
-         print("You have too much responsibilities")
-       else:
-         print("Lucky you")
-first_person.is_adult()
-first_person=person()
-print(first_person.name)
-print(first_person.age)
+        if self.Age > 18:
+            return("You have too much responsibilities")
+        elif self.Age<18:
+            return("Lucky you!!!")
+        else:
+            return("invalid age")
 
-#method
-def is_adult(self):
-    if self.age>=18 :
-         print("You have too much responsibilities")
-    else:
-          print("Lucky you")
-first_person.is_adult()
+    def __str__(self):
+       return f"My name is {self.Name} and I am {self.Age} years old "
 
-
-def str(self):
-    return f"my name is {self.name} and i am {self.age} years old"
-    first_person=person2("fatma",15)
-    print(first_person.name)
-    print(first_person.age)
-    print(first_person.is_adult())
-    print(first_person)
-
-
+First_Person = Person2("fatima",15)
+print(First_Person.Name)
+print(First_Person.Age)
+print(First_Person.is_adult())
+print(First_Person)
 
 
 
